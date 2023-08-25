@@ -9,6 +9,7 @@ html {
     background-color: #6885e0;
     color: #1212b2;
 }
+
 h1 {
     font-size: 35px;
     margin-bottom: 8px;
@@ -27,11 +28,13 @@ p {
     max-width: 540px;
     margin: 0 auto;
 }
+
 header {
-    background-color:  #e9f45b;
+    background-color: #e9f45b;
     text-align: center;
     padding: 32px;
 }
+
 .character {
     height: 112px;
     width: 112px;
@@ -52,6 +55,7 @@ header {
     flex-wrap: wrap;
     padding: 40px 4px;
 }
+
 .loading img {
     width: 100px;
 }
@@ -59,6 +63,7 @@ header {
 .loading-hidden {
     display: none;
 }
+
 .loading {
     position: fixed;
     top: 0;
@@ -70,4 +75,38 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(161, 210, 255, 0.8);
+    z-index: 999;
+}
+.modal-box {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #1212b2;
+    max-width: 512px;
+    margin: 24px auto;
+}
+.modal-close {
+    background-color: #ffaafb;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 2px solid #1212b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.modal-hidden {
+    display: none;
 }
